@@ -1,0 +1,39 @@
+documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Applications of Artificial Intelligence in Nuclear Medicine Image Generation}
+\author{Sibi Yadav (Roll No.-18111050)}
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+As we all know nuclear medicine is a crucial part of the modern health care system. It has significantly improved the disease diagnosis.
+
+In this term paper I will give you a conceptual classification and a brief summary of the technical fundamentals of Artificial intelligence, Possible applications are discussed on the basis of a typical work flow in medical imaging, grouped by planning, scanning, interpretation, and reporting.Then turn the main limitations of current AI techniques, such as issues with interpretability or the need for large amounts of annotated data, are briefly addressed.
+
+\vspace{1.17\baselineskip}
+This paper focused on four aspects
+\begin{itemize}
+    \item Impact of AI on the nuclear medicine. 
+    \item The associated challenges.
+    \item The opportunities.
+    \item Including imaging physics. 
+    \item Image reconstruction.
+    \item Image postprocessing. 
+    \item Image postprocessing. 
+\end{itemize}
+\vspace{1.17\baselineskip}
+
+ 
+Discuss about the application of artificial intelligence (AI) in medical imaging (including nuclear medicine imaging) has rapidly developed. most AI applications in nuclear medicine imaging have focused on the diagnosis, treatment monitoring, also be used for image generation to shorten the time of image acquisition, reduce the dose of injected tracer, and enhance image quality.
+
+The application of AI in image generation for single-photon emission computed tomography (SPECT) and positron emission tomography (PET) either without or with anatomical information (CT or magnetic resonance imaging (MRI)).
+
+
+\vspace{1.17\baselineskip}
+After that generating attenuation map, estimating scatter events, boosting image quality, and predicting internal dose map is summarized and discussion then review problems, advantages, disadvantages, challenges and advancement of AI in nuclear Medicine.
+\vspace{1.17\baselineskip}
+
+\end{document}
