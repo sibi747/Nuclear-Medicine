@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Applications of Artificial Intelligence in Nuclear Medicine Image Generation}
+\author{Sibi Yadav (Roll No.-18111050)}
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+As we all know nuclear medicine is a crucial part of the modern health care system. It has significantly improved the disease diagnosis.
+
+In this term paper I will give you a conceptual classification and a brief summary of the technical fundamentals of Artificial intelligence, Possible applications are discussed on the basis of a typical work flow in medical imaging, grouped by planning, scanning, interpretation, and reporting.Then turn the main limitations of current AI techniques, such as issues with interpretability or the need for large amounts of annotated data, are briefly addressed.
+
+\vspace{1.17\baselineskip}
+This paper focused on four aspects
+\begin{itemize}
+    \item Impact of AI on the nuclear medicine. 
+    \item The associated challenges.
+    \item The opportunities.
+    \item Including imaging physics. 
+    \item Image reconstruction.
+    \item Image postprocessing. 
+    \item Image postprocessing. 
+\end{itemize}
+\vspace{1.17\baselineskip}
+
+ 
+Discuss about the application of artificial intelligence (AI) in medical imaging (including nuclear medicine imaging) has rapidly developed. most AI applications in nuclear medicine imaging have focused on the diagnosis, treatment monitoring, also be used for image generation to shorten the time of image acquisition, reduce the dose of injected tracer, and enhance image quality.
+
+The application of AI in image generation for single-photon emission computed tomography (SPECT) and positron emission tomography (PET) either without or with anatomical information (CT or magnetic resonance imaging (MRI)).
+
+
+\vspace{1.17\baselineskip}
+After that generating attenuation map, estimating scatter events, boosting image quality, and predicting internal dose map is summarized and discussion then review problems, advantages, disadvantages, challenges and advancement of AI in nuclear Medicine.
+\vspace{1.17\baselineskip}
+
+
+\section{Introduction}
+The application of artificial intelligence (AI) in medical imaging (including nuclear medicine imaging) has rapidly developed. Most AI applications in nuclear medicine imaging have focused on the diagnosis, treatment monitoring, and correlation analyses with pathology or specific gene mutation. 
+It can also be used for image generation to shorten the time of image acquisition, reduce the dose of 
+injected tracer, and enhance image quality.
+
+This work provides an overview of the application of AI in image generation for single-photon emission computed tomography (SPECT) and positron emission tomography (PET) either without or with anatomical information [CT or magnetic resonance imaging (MRI)]. This paper focused on four aspects, including imaging physics, image reconstruction, image postprocessing, and internal dosimetry. AI application in generating attenuation map, estimating scatter events, boosting image quality, and predicting internal dose map is summarized and discussed.
+\section{Imaging physics}
+As the two most widely used nuclear medicine imaging technologies, both PET and SPECT quantify radionuclides’ distribution in a recipient by measuring the gamma photons emitted from that recipient. In practice, gamma photons are attenuated due to tissue absorption in the recipient. The attenuation effect causes the number of photons to be less than expected and results in nonuniform deviations in the radioactive distribution due to the different attenuation paths from the tracer to the detector.
+Another factor affecting image quality is scattered photons. Scattering events will cause severe artifacts and quantitative errors. The emergence of AI technology is not a complete replacement of traditional methods but rather an auxiliary means to find function mapping relationships and largely depends on the model structure, data range, and training process.
+\section{Application in nuclear medicine}
+The rise of AI in medicine is often associated with ‘‘superhuman’’ abilities and precision medicine. At the same time, often overlooked are the facts that large parts of physicians’ everyday work consist of routine tasks and that the delegation of those tasks
+to AI would give the human workforce more time for higher-value activities (8) that typically require human attributes such as creativity, cognitive insight, meaning, or empathy. The day-to-day work of medical imaging involves a multitude of activities, including the planning of examinations, the detection of pathologies and their quantification, and manual research for additional information in medical records and textbooks—which often tend
+to bore and demand too little intellectually from the experienced physician but, with continuously rising workloads, tend to overwhelm the beginner. Without diminishing the prospects of ‘‘superdiagnostics’’ and precision medicine, seemingly more easily achievable goals of AI in medicine should not be forgotten because they might relieve people who are highly educated and have specialized skills of repetitive routine tasks.
+\section{Limitations of AI}
+Although the use of AI in health care certainly holds great potential, its limitations also need to be acknowledged. A well known problem is the interpretability of the models. Although
+symbolic AI or simple machine learning models, such as decision trees or linear regression, are still fully understood by people,understanding becomes increasingly difficult with more advanced techniques and is now impossible with many deep learning models; this situation can lead to unexpected results and non deterministic behavior. Although this issue also applies to other procedures in medicine in which the exact mechanisms of action are often poorly understood (e.g., pharmacotherapy),whether predictive AI can and may be used for far-reaching decisions if the exact mode of action is unclear remains unresolved.
+
+However, in cases in which AI acts as an assistant that provides hints or produces results that can be replicated by people or visually verified, the lack of interpretability of theunderlying models may not be an obstacle to clinical application. For other cases, especially in image recognition and interpretation,certain techniques (such as activation maps) can provide high level visual insights into the inner workings of ANNs.The problem of interpretability is the subject of intensive researchand various initiatives, although whether these will be ableto keep pace with the rapid progress in the development of increasingly complex ANN architectures is unclear.
+
+\section{Hybrid nuclear medicine imaging}
+For PET/CT or SPECT/CT, CT-based AC (CTAC) has been the standard technique. However, the risk of CT radiation exposure is a concern of the public, which should be minimized for young subjects. Besides, when the CT structure might be truncated, CTAC may not provide satisfactory results due to the missing attenuation information for this part. Traditional approaches to solving this problem rely on prior information and non-attenuation corrected images. Recently,proposed an inpainting-based context encoder structure for SPECT/CT imaging, which inferred the truncated CT image’s missing information from the untruncated CT image to obtain the attenuation map. Thus, they provided a new way to solve the truncation problem.
+
+In comparison with PET/CT, the AC in PET/MRI 
+is more challenging as the voxel intensity of MRI cannot 
+reflect the photon attenuation characteristics; therefore, 
+the attenuation map of PET cannot be obtained directly. Traditional MR-based AC (MRAC) methods 
+mainly include segmentation-based methods, atlasesbased methods, template-based methods, emission, and 
+transmission-based methods.
+\end{document}
