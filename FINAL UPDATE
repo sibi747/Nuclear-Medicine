@@ -1,0 +1,234 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+
+\title{Applications of Artificial Intelligence in Nuclear 
+Medicine Image Generation}
+\author{Under the guidance of: Mr. Saurabh Gupta}
+\date{Submitted by: Sibi Yadav (Roll no.- 18111050)}
+
+\begin{document}
+
+\maketitle
+
+\begin{ABSTRACT}
+
+As we all know nuclear medicine is a crucial part of the modern health care system. It has significantly improved the disease diagnosis. In this term paper I will give you a conceptual classification and a brief summary of the technical fundamentals of Artificial intelligence. A discussion of possible applications in nuclear medicine and, finally, a brief consideration of the possible impact of these technologies on the profession of the physician.
+
+Discuss about the application of artificial intelligence (AI) in medical imaging (including nuclear medicine imaging) has rapidly developed. most AI applications in nuclear medicine imaging have focused on the diagnosis, treatment monitoring, also be used for image generation to shorten the time of image acquisition, reduce the dose of injected tracer, and enhance image quality. 
+After that turn the main limitations of current AI techniques & aspects like Impact of AI on the nuclear medicine, The associated challenges, The opportunities, Including imaging physics is summarized and discussion then review problems, advantages, disadvantages, challenges and advancement of AI in nuclear Medicine. 
+    \end{ABSTRACT}
+
+
+ 
+
+\section{INTRODUCTION}
+The application of artificial intelligence (AI) in medical imaging (including nuclear medicine imaging) has rapidly developed. Most AI applications in nuclear medicine imaging have focused on the diagnosis, treatment monitoring, and correlation analyses with pathology or specific gene mutation. It can also be used for image generation to shorten the time of image acquisition, reduce the dose of injected tracer, and enhance image quality. This work provides an overview of the application of AI in image generation for single-photon emission computed tomography (SPECT) and positron emission tomography (PET) either without or with anatomical information [CT or magnetic resonance imaging (MRI)].
+
+In nuclear medicine imaging, AI has also focused on using the imaging data. Machine learning (ML) is an important branch of AI. The applications of ML in nuclear medicine imaging include disease diagnosis [positron emission tomography (PET), single-photon emission computed tomography (SPECT), prognosis, lesion classification, and imaging physics.
+
+\vspace{1\baselineskip}
+This paper focused mainly on image generation development, including The section “Imaging physics” provides AI applications in imaging physics, including the generation of attenuation maps and the estimation of scattered events. The section “Image reconstruction” reviews AI applications in image reconstruction, including the optimization of the reconstruction algorithm. The section “Image postprocessing” covers AI applications in image postprocessing, including the generation of high-quality reconstructed images (in full-dose or low-dose imaging) and image fusion. The section “Internal dosimetry” reviews AI applications and predicting internal dose is summarized and discussed.  
+
+\section{APPLICATION IN NUCLEAR MEDICINE}
+The rise of AI in medicine is often associated with “superhuman” abilities and precision medicine. At the same time, often overlooked are the facts that large parts of physicians’ everyday work consist of routine tasks and that the delegation of those tasks to AI would give the human workforce more time for 2 higher-value activities that typically require human attributes such as creativity, cognitive insight, meaning, or empathy. The day-to-day work of medical imaging involves a multitude of activities, including the planning of examinations, the detection of pathologies and their quantification, and manual research for additional information in medical records, which often tend to bore and demand too little intellectually from the experienced physician but, with continuously rising workloads, tend to overwhelm the beginner. Without diminishing the prospects of “superdiagnostics” and precision medicine, seemingly more easily achievable goals of AI in medicine should not be forgotten because they might relieve people who are highly educated and have specialized skills of repetitive routine tasks. 
+
+\begin{center}
+    \includegraphics[width=1\textwidth]{Screenshot (11).png}
+    \caption{FIGURE 1. Division of typical medical imaging Work Flow into 4 steps. Each step is assigned a list with examples of typical tasks that could be performed in that step and could be improved with the help of AI.}
+\end{center}
+
+
+
+
+\vspace{1\baselineskip}
+A typical medical imaging work flow can be divided into 4 steps: planning, image acquisition, interpretation, and reporting (Fig. 1). Steps such as admission and payment could be included as well. We have deliberately focused on the parts of the work flow in physician is directly and primarily involved. In Figure-1, each step is assigned a list with examples of typical tasks that could be performed in that step and that could be improved, accelerated, or completely automated with the help of AI.
+
+\vspace{2\baselineskip}
+Planning 
+\vspace{0.5\baselineskip}
+
+Before an examination is performed on a patient at all, whether a planned procedure is medically indicated should be determined. The more unpleasant, risky, or expensive the respective examination is, the more this guideline applies. One of the greatest challenges in the scheduling of medical examinations is ‘‘no-shows’’, this challenge is particularly problematic in the case of nuclear medicine because of tracer availability, decay, and cost.
+Often patient-related information given at the time of referral is sparse, and extensive manual searching through large numbers of unstructured text documents by the physician is necessary to gather all of the information that is needed for optimal preparation and planning of the examination. 
+
+\vspace{2\baselineskip}
+Scanning 
+\vspace{0.5\baselineskip}
+
+Modern scanner technology already makes increasing use of machine learning, and recent advancements in research suggest considerable technical improvements in the near future. In nuclear medicine, attenuation maps and scatter correction remain topics for PET and SPECT imaging, so it is not surprising that these are the subjects of intensive research by various AI groups.
+
+\vspace{0.5\baselineskip}
+Improvements in reconstructed image quality could also be translated to dose savings, as shown by multiple groups that estimated full-dose PET images from lowdose scans. Instead of an analytic approach based on image segmentation, it is also possible to use generative adversarial networks (GANs) to directly translate 1 imaging modality into another. The improvement of image quality used a deep residual convolutional neural network (CNN) to enhance the image resolution and noise property of PET scanners with large pixelated crystals. In nuclear medicine, scanning depends directly on the application of radiotracers.
+
+\vspace{2\baselineskip}
+Interpretation (Reading)
+\vspace{0.5\baselineskip}
+
+Many interpreters maintain a list of examinations that they have to interpret and that they process chronologically in a first-in, firstout order. In the future, such systems could work directly on raw data, such as sinograms, and raise alerts during the scan time, even before reconstruction.In such a scenario, the technician could modify or extend the planned scan protocol to accommodate the unexpected finding; for example, an intracranial hemorrhage detected during a lowdose PET/CT scan could trigger an immediate full-dose CT scan of the head.
+
+\vspace{.3\baselineskip}
+Intelligent systems can also support the interpreter with classification and differential diagnosis. Many studies have shown possible applications for radiology, such as the differentiation of liver masses in MRI, bone tumor diagnosis in radiography, classification of interstitial lung diseases in CT, or diagnosis of acute infarctlike myocarditis in MRI.
+
+\vspace{2\baselineskip}
+Reporting
+\vspace{0.5\baselineskip}
+
+AI is often intuitively associated with superhuman performance, so it is not surprising that there is such a high level of research activity in the area of prediction of unknown outcomes. Despite the high sensitivity and specificity of procedures such as PET/CT in tumor detection, it is still not possible to detect socalled micrometastases or early metastatic disease, although the detection of tumor spread has significant effects on the treatment concept.
+
+\vspace{0.5\baselineskip}
+
+when complex cases or rare diseases are being reported, it is often helpful to compare them with similar cases from databases and case collections. AI-based automatic image annotations and content-based image retrieval, conducting large, direct image-based, database searches and thereby finding potentially similar cases that might be helpful in a real diagnostic situation are increasingly possible.
+
+
+\section{IMAGING PHYSICS}
+As the two most widely used nuclear medicine imaging technologies, both PET and SPECT quantify radionuclides’ distribution in a recipient by measuring the gamma photons emitted from that recipient. In practice, gamma photons are attenuated due to tissue absorption in the recipient. The attenuation effect causes the number of photons to be less than expected and results in non uniform deviations in the radioactive distribution due to the different attenuation paths from the tracer to the detector. Another factor affecting image quality is scattered photons. Scattering events will cause severe artifacts and quantitative errors. The emergence of AI technology is not a complete replacement of traditional methods but rather an auxiliary means to find function mapping relationships and largely depends on the model structure, data range, and training process.
+
+\vspace{1\baselineskip}
+
+The wide application of ML in PET attenuation correction (AC), and they explored the performance of AI in PET AC under different input conditions. Here, we extended the search scope to nuclear medicine imaging (PET/SPECT) and evaluated the AI technology from two angles, namely AC and scatter correction. In each part, we discussed the application of different types of AI structures under different imaging methods.
+
+
+\vspace{2\baselineskip}
+(AC) Stand-alone nuclear medicine imaging \vspace{0.5\baselineskip}
+
+The content included in this part mainly focuses on PET. Usually, due to space limitations in the scanner, only PET is built for some applications such as ambulatory microdose PET and helmet PET. The attenuation coefficients have usually been obtained via scanning external radiation sources (such as X-ray or barium sources), which is typically time-consuming and introduces additional radiation exposure. With AI’s help, pseudo-CT (pCT) images/corrected nuclear medical images can be obtained quickly for AC. Once the training is completed, the label image will no longer be needed, which will avoid additional costs and radiation risks.
+
+\begin{center}
+    \includegraphics[width=1\textwidth]{Screenshot (12).png}
+    \caption{FIGURE- 2, Example of CAE structure & CED structure (U-net). CED structure is similar to CAE structure, unlike CAE, U-net augments the contracting path that enables high-resolution features to be combined in the output layers. CAE, convolutional autoencoder; CED, convolutional encoder-decoder; CT, computed tomography; pCT, pseudo-CT.}
+    \end{center}
+
+\vspace{0.5\baselineskip}
+
+Convolutional auto encoder (CAE) and convolutional encoder-decoder (CED) structures to predict pCT images from attenuation uncorrected PET images, as shown in Figure (2). The CAE structure was originally proposed for unsupervised feature learning and later widely used in image denoising and other fields. The CED structure is similar to the CAE structure. The most well-known structure is the U-net. Unlike CAE, U-net augments the contracting path that enables high-resolution features to be combined in the output layers.
+
+
+
+\vspace{2\baselineskip}
+Hybrid nuclear medicine imaging 
+\vspace{0.5\baselineskip}
+
+For PET/CT or SPECT/CT, CT-based AC (CTAC) has been the standard technique. However, the risk of CT radiation exposure is a concern of the public, which should be minimized for young subjects. Besides, when the CT structure might be truncated, CTAC may not provide satisfactory results due to the missing attenuation information for this part. Traditional approaches to solving this problem rely on prior information and non-attenuation corrected images. Recently, proposed an in painting based context encoder structure for SPECT/CT imaging, which inferred the truncated CT image’s missing information from the untruncated CT image to obtain the attenuation map. Thus, they provided a new way to solve the truncation problem. 
+
+\vspace{2\baselineskip}
+Scatter correction
+\vspace{0.5\baselineskip}
+
+In general, scatter correction includes direct measurement or modeling to estimate scatter events. One of the traditional scatter correction methods is to use a lower energy window to measure the scatter image. Although double or triple energy window subtraction techniques have been continuously designed, the performance has not been significantly improved. The section “Stand-alone nuclear medicine imaging” outlined the use of AI technology to predict the activity image after attenuation directly and scatter correction, which is beneficial for independent nuclear medicine equipment.
+
+
+\section{IMAGE RECONSTRUCTIONI}
+The image reconstruction from raw projection data is an inverse problem. AI technology development, mostly in PET reconstruction. The application of AI technology cannot solve the inverse problem. It essentially provides a mapping relationship to solve specific key problems in reconstruction with a datadriven solution, such as completing the transformation between the sinogram domain and the image domain or replacing traditional algorithms regularization. To a certain extent, the emergence of AI technology has made it possible to obtain better imaging quality without increasing hardware costs.
+
+\begin{center}
+    \includegraphics[width=1\textwidth]{Screenshot (13).png}
+    \caption{FIGURE-3, Static nuclear medicine image reconstruction method. (A) AI technology is applied in the projection domain to complete sinogram data or obtain more continuous sinogram data. (B) AI technology is applied to generate PET/SPECT images directly from sinogram data. (C) AI technology is applied to directly enhance the back-projection data and generate PET/SPECT images. (D) AI technology is combined with iterative reconstruction algorithms. AI, artificial intelligence; SPECT, single photon emission computed tomography; PET, positron emission tomography.}
+    \end{center}
+
+
+\vspace{1\baselineskip}
+
+The basic theory of PET reconstruction and the key paradigm shift used by DL in PET reconstruction. They strictly focused on raw PET data. Here, we focused the search scope on nuclear medicine image reconstruction (PET/SPECT) and introduced the application of AI to three different systems, namely static scan (shown in Figure 3), dynamic scan, and hybrid fusion.
+
+
+\section{IMAGE POSTPROCESSING}
+Low-dose nuclear medicine imaging is desirable in the clinic. One way to reduce image noise associated with low dose imaging is to apply a smoothing operation after iterative reconstruction. However, there is a trade off between noise level and spatial resolution. With the development of GPU technology and AI’s outstanding performance in natural image denoising, AI is proven to achieve a better balance between noise level and image resolution. 
+
+\vspace{1\baselineskip}
+
+The AI technologies have been used to obtain high-quality nuclear medicine images, such as in image denoising and image fusion.Another way to obtain higher quality nuclear medicine images is image fusion, which combines CT/MRI images with structural information to form a new clear image. Traditional methods mainly include component substitution and multi-resolution analysis, but it is often difficult to extract edge details.
+
+\section{INTERNAL DOSIMETRY}
+In addition to focusing on obtaining higher-quality nuclear medicine images, obtaining more accurate dose maps is also important because internal dosimetry is the key to personalized treatment in nuclear medicine. Personalized dose estimation can minimize the risk of radiation-induced toxicity. In personalized therapy, simulation is used as the gold standard for dosimetry, although it has not been applied in clinical practice. The factors that limit its conventional application include its huge amount of calculation and computing time. The most widely used dosimetry method in clinical practice comes from the Medical Internal Radiation Dose (MIRD) committee. 
+
+\section{LIMITATIONS OF AI} 
+Although the use of AI in health care certainly holds great potential, its limitations also need to be acknowledged. A well known problem is the interpretability of the models. Although symbolic AI or simple machine learning models, such as decision trees or linear regression, are still fully understood by people, understanding becomes increasingly difficult with more advanced techniques and is now impossible with many deep learning models; this situation can lead to unexpected results and non deterministic behavior. Although this issue also applies to other procedures in medicine in which the exact mechanisms of action are often poorly understood, whether predictive AI can and may be used for far-reaching decisions if the exact mode of action is unclear remains unresolved. 
+
+\vspace{1.5\baselineskip}
+
+However, in cases in which AI acts as an assistant that provides hints or produces results that can be replicated by people or visually verified, the lack of interpretability of the underlying models may not be an obstacle to clinical application. For other cases, especially in image recognition and interpretation, certain techniques (such as activation maps) can provide high level visual insights into the inner workings of ANNs. The problem of interpretability is the subject of intensive research and various initiatives, although whether these will be able to keep pace with the rapid progress in the development of increasingly complex ANN architectures is unclear. 
+
+\vspace{2.5\baselineskip}
+
+Another problem is that many machine learning applications will always deliver a result on an input but cannot provide a measure of the certainty of their prediction. Thus, a human operator often cannot decide whether to trust the result of AIbased software or not. Possible solutions for this problem are the integration of probabilistic reasoning and statistical analysis in machine learning as well as quality control. However, training AI systems with biased data will make the resulting models generate biased predictions, this issue is especially problematic because many users perceive such systems as analytically correct and unprejudiced. One of the largest hurdles for AI in health care is the need for large amounts of structured and annotated data for supervised learning.
+
+
+\section{FUTURE PERSPECTIVE}
+AI does not necessarily have to be superhuman to have a benefit for medicine. However, it is obvious that AI is already better than people in some areas, and this development is a consequence of technologic progress. Therefore, many physicians are concerned that they will be replaced by AI in the future a concern that is partly exacerbated by insufficient knowledge of how AI works.
+
+\vspace{1\baselineskip}
+
+Although most experts and surveys reject the fear of AI replacing physicians, this fact does not mean that AI will have no impact on the medical profession. In fact, it is highly likely that AI will transform the medical profession and medical imaging in particular. In the near future, the automation of laborintensive but cognitively undemanding tasks, such as image segmentation or finding prior examinations, will be available for clinical application. This change should be perceived not as a threat but as an opportunity to relieve oneself of this work and as a stimulus for the further development of the profession. In fact, it is imperative for the profession to grow into the role it will be given in the future by AI. The increasing use of large amounts of digital data in medicine will create the need for new skills, such as clinical data science, computer science, and machine learning, especially in diagnostic disciplines.
+
+\vspace{1\baselineskip}
+
+It can even be assumed that the boundaries between the diagnostic disciplines will become blurred, as the focus will increasingly be less on the detection and classification of individual findings and more on the comprehensive analysis and interpretation of all available data on a patient. Although prospective physicians can be confident that medical imaging offers them a bright future, it is important for them to understand that this future is open only to those who are trained and necessary expertise among physicians, precision health care, personalized medicine, and super diagnostics are to become clinical realities.
+
+
+\section{CONCLUSION}
+The explosive development of AI in the field of computer vision and image processing, especially AI is being increasingly used in nuclear medicine imaging. As described in this paper, the application of AI in nuclear medicine imaging has demonstrated potential in promoting the nuclear medicine imaging system and paving the way for precision medicine. In particular, the data-driven end-to-end mapping method provides new opportunities for many traditional tasks, such as the prediction of attenuation maps, improvement of reconstruction quality, prediction of internal dose map, and AI has demonstrated improved image quality and quantification for multiple tasks.
+
+\vspace{1\baselineskip}
+
+Finally, we would like to sketch the landscape of the AI technology advancements that offer improvements in nuclear medicine imaging quality. AI prediction will take less time than other methods. We are still actively investigating the possibility of AI technology in improving the quality of nuclear medicine imaging and its application.
+
+\vspace{2\baselineskip}
+\item {ACKNOWLEDGEMENT}
+\vspace{0.5\baselineskip}
+
+I would like to express my special thanks of gratitude to my prof. Mr. SAURABH GUPTA who gave me the golden opportunity to do this wonderful work. which also helped me in doing a lot of research review and I came to know about so many new things. I am really thankful.
+
+\vspace{0.5\baselineskip}
+\section{REFRENCE}
+\begin{enumerate}
+    \item  McCarthy J, Minsky ML, Rochester N, Shannon CE. A proposal for the Dartmouth Summer Research Project on Artificial Intelligence, August 31, 1955. AI Mag. 2006;27:12–14. 
+\item Rosenfeld A, Zemel R, Tsotsos JK. The elephant in the room. arXiv.org website. https://arxiv.org/abs/1808.03305. Accessed June 20, 2019. 
+\item McCulloch WS, Pitts W. A logical calculus of the ideas immanent in nervous activity. 1943. Bull Math Biol. 1990;52:99–115. 
+\item Rosenblatt F. The perceptron: a probabilistic model for information storage and organization in the brain. Psychol Rev. 1958;65:386–408. 
+\item Minsky M, Papert S. Perceptrons: An Introduction to Computational Geometry. Cambridge, MA: MIT Press; 1969. 
+\item Krizhevsky A, Sutskever I, Hinton GE. ImageNet classification with deep convolutional neural networks. In: Proceedings of the 25th International Conf on Neural Information Processing Systems. Vol 1. Red Hook, NY: Curran Associates Inc.; 2012:1097–1105. 
+\item Korkinof D, Rijken T, O’Neill M, Yearsley J, Harvey H, Glocker B. Highresolution mammogram synthesis using progressive generative adversarial networks. arXiv.org website. https://arxiv.org/abs/1807.03401. Accessed June 20, 2019. 
+\item Hainc N, Federau C, Stieltjes B, Blatow M, Bink A, Stippich C. The bright, artificial intelligence-augmented future of neuroimaging reading. Front Neurol. 2017;8:489. 
+\item Ansart M, Epelbaum S, Gagliardi G, et al. Reduction of recruitment costs in preclinical AD trials: validation of automatic pre-screening algorithm for brain amyloidosis. Stat Methods Med Res. January 30, 2019 [Epub ahead of print]. 
+\item Harvey HB, Liu C, Ai J, et al. Predicting no-shows in radiology using regression modeling of data available in the electronic medical record. J Am Coll Radiol. 2017;14:1303–1309.
+\item Baessler B, Luecke C, Lurz J, et al. Cardiac MRI texture analysis of T1 and T2 maps in patients with infarctlike acute myocarditis. Radiology. 2018;289:357– 365. 
+\item Togo R, Hirata K, Manabe O, et al. Cardiac sarcoidosis classification with deep convolutional neural network-based features using polar maps. Comput Biol Med. 2019; 104:81–86. 
+\item Ma L, Ma C, Liu Y, Wang X. Thyroid diagnosis from SPECT images using convolutional neural network with optimization. Comput Intell Neurosci. 2019;2019: 6212759. 
+\item Ellmann S, Seyler L, Evers J, et al. Prediction of early metastatic disease in experimental breast cancer bone metastasis by combining PET/CT and MRI parameters to a model-averaged neural network. Bone. 2019;120:254–261. 
+\item Chen L, Zhou Z, Sher D, et al. Combining many-objective radiomics and 3D convolutional neural network through evidential reasoning to predict lymph node metastasis in head and neck cancer. Phys Med Biol. 2019;64:075011. 
+\item Xiong J, Yu W, Ma J, Ren Y, Fu X, Zhao J. The role of PET-based radiomic features in predicting local control of esophageal cancer treated with concurrent chemoradiotherapy. Sci Rep. 2018;8:9902
+\item Subramanian M, Wojtusciszyn A, Favre L, Boughorbel S, Shan J, Letaief KB, Pitteloud N, Chouchane L. Precision medicine in the era of artificial intelligence: implications in chronic disease management. J Transl Med 2020;18:472. 
+\item Adir O, Poley M, Chen G, Froim S, Krinsky N, Shklover J, Shainsky-Roitman J, Lammers T, Schroeder A. Integrating artificial intelligence and nanotechnology for precision cancer medicine. Adv Mater 2020;32:e1901989. 
+\item Hatt M, Parmar C, Qi J, Naqa IE. Machine (deep) learning methods for image processing and radiomics. IEEE Trans Radiat Plasma Med Sci 2019;3:104-8.
+ \item OuX, Zhang J, Wang J, Pang F, Wang Y, Wei X, Ma X. Radiomics based on 18F-FDG PET/CT could differentiate breast carcinoma from breast lymphoma using machine-learning approach: a preliminary study. Cancer Med 2020;9:496-506.
+\item Litjens G, Kooi T, Bejnordi BE, Setio AAA, Ciompi F, Ghafoorian M, van der Laak J, van Ginneken B, Sánchez CI. A survey on deep learning in medical image analysis. Med Image Anal 2017;42:60-88. 
+\item Mont MA, Krebs VE, Backstein DJ, Browne JA, Mason JB, Taunton MJ, Callaghan JJ. Artificial intelligence: influencing our lives in joint arthroplasty. J Arthroplasty 2019;34:2199-200. 
+\item Ting DSW, Pasquale LR, Peng L, Campbell JP, Lee AY, Raman R, Tan GSW, Schmetterer L, Keane PA, Wong TY. Artificial intelligence and deep learning in ophthalmology. Br J Ophthalmol 2019;103:167-75. 
+\item Ouerghi H, Mourali O, Zagrouba E. Non-subsampled shearlet transform based MRI and PET brain image fusion using simplified pulse coupled neural network and weight local features in YIQ colour space. IET Image Processing 2018;12:1873-80. 
+\item Huang C, Tian G, Lan Y, Peng Y, Ng EYK, Hao Y, Cheng Y, Che W. a new pulse coupled neural network (PCNN) for brain medical image fusion empowered by shuffled frog leaping algorithm. Front Neurosci 2019;13:210.
+\item Song TA, Chowdhury SR, El Fakhri G, Li QZ, Dutta J. Super-resolution PET imaging using a generative adversarial network. J Nucl Med 2019;60:abstr 576. 
+\item Song TA, Chowdhury SR, Yang F, Dutta J. PET image super-resolution using generative adversarial networks. Neural Netw 2020;125:83-91
+\item Toyama Y, Hotta M, Motoi F, Takanami K, Minamimoto R, Takase K. Prognostic value of FDG-PET radiomics with machine learning in pancreatic cancer. Sci Rep 2020;10:17024. 
+\item Tang J, Yang B, Adams MP, Shenkov NN, Klyuzhin IS, Fotouhi S, Davoodi-Bojd E, Lu L, Soltanian-Zadeh H, Sossi V, Rahmim A. Artificial neural network-based prediction of outcome in Parkinson's disease patients using DaTscan SPECT imaging features. Mol Imaging Biol 2019;21:1165-73. 
+\item Moazemi S, Khurshid Z, Erle A, Lütje S, Essler M, Schultz T, Bundschuh RA. Machine learning facilitates hotspot classification in PSMA-PET/CT with nuclear medicine specialist accuracy. Diagnostics (Basel) 2020;10:622
+\item Martin-Isla C, Campello VM, Izquierdo C, RaisiEstabragh Z, Baeßler B, Petersen SE, Lekadir K. Imagebased cardiac diagnosis with machine learning: a review. Front Cardiovasc Med 2020;7:1. 
+\item Ellis S, Reader AJ. Kernelised EM image reconstruction for dual-dataset PET studies. In: 2016 IEEE Nuclear Science Symposium, Medical Imaging Conference and Room-Temperature Semiconductor Detector Workshop (NSS/MIC/RTSD). Strasbourg: IEEE, 2016:1-3. 
+\item Spencer B, Qi J, Ramsey DB, Wang G. Dynamic PET image reconstruction for parametric imaging using the HYPR kernel method. In: Proc.SPIE. Orlando: SPIE, 2017
+\item Yang B, Ying L, Tang J. Artificial neural network enhanced bayesian PET image reconstruction. IEEE Trans Med Imaging 2018;37:1297-309. 
+\item Wang G, Qi J. PET image reconstruction using kernel method. IEEE Trans Med Imaging 2015;34:61-71. \item Boudjelal A, Messali Z, Elmoataz A. A novel kernel-based regularization technique for PET image reconstruction. Technologies 2017;5:37.
+\item Thompson RC. CT attenuation correction for thallium SPECT MPI and other benefits of multimodality imaging. J Nucl Cardiol 2019;26:1596-8. 
+\item Lee JS. A review of deep learning-based approaches for attenuation correction in positron emission tomography. IEEE Trans Radiat Plasma Med Sci 2021;5:160-84. 
+\item Melroy S, Bauer C, McHugh M, Carden G, Stolin A, Majewski S, Brefczynski-Lewis J, Wuest T. Development and design of next-generation head-mounted ambulatory microdose positron-emission tomography (AM-PET) system. Sensors (Basel) 2017;17:1164. 
+\item Tashima H, Yamaya T. Proposed helmet PET geometries with add-on detectors for high sensitivity brain imaging. Phys Med Biol 2016;61:7205-20. 
+\item Mannheim JG, Schmid AM, Schwenck J, Katiyar P, Herfert K, Pichler BJ, Disselhorst JA. PET/MRI hybrid systems. Semin Nucl Med 2018;48:332-47.
+\item Images aren’t everything: AI, radiology and the future of work. The Economist. June 7, 2018. https://www.economist.com/leaders/2018/06/07/ai-radiology-andthe-future-of-work. Accessed June 20, 2019. 
+\item  Parker W. Despite AI, the radiologist is here to stay. https://medium.com/ unauthorized-storytelling/the-radiologist-is-here-to-stay-24da650621b5. Accessed June 20, 2019
+\item Perk T, Bradshaw T, Chen S, et al. Automated classification of benign and malignant lesions in 18F-NaF PET/CT images using machine learning. Phys Med Biol. 2018;63:225019. Perk T, Bradshaw T, Chen S, et al. Automated classification of benign and malignant lesions in 18F-NaF PET/CT images using machine learning. Phys Med Biol. 2018;63:225019
+\item Yang B, Tang J. Learning-based attenuation correction for brain PET/MRI using artificial neural networks. In: 2017 IEEE Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC). Atlanta: IEEE, 2017:1-4.
+\item Dietze MMA, Branderhorst W, Kunnen B, Viergever MA, de Jong H. Accelerated SPECT image reconstruction with FBP and an image enhancement convolutional neural network. EJNMMI Phys 2019;6:14
+
+
+\end{enumerate}
+
+\end{document}
